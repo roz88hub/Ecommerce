@@ -51,7 +51,7 @@ public class Product {
 	double price;	
 	String category;	
 	int quantity;
-	char size;
+	char size;  
 	String author;
 	String color;
 

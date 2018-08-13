@@ -20,8 +20,7 @@ public class Shop {
 		Scanner inputKey = new Scanner(System.in);
 		 double totalAmount = 0.0;	 
 		 int userInput = 9;
-	 
-	
+	   	
 	 while(true) {
 		 System.out.println("Enter the product index (0 to 4) you want to buy. To exit the shopping cart, enter any number other than 0 to 4");
 		  for ( int i = 0; i < inventory.length ; i++) {
