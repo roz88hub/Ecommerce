@@ -1,11 +1,11 @@
-/*Rojan Pradha
+/*Rojan Pradhan
 Quiz 5*/
 
 //Creating a Product Class
-public class Product {
+public abstract class Product {
 	String name;
-	
-//Setting a getter and Setters for attributes of Class Product
+
+	//Setting a getter and Setters for attributes of Class Product
 	public String getName() {
 		return name;
 	}
@@ -15,7 +15,7 @@ public class Product {
 	public double getPrice() {
 		return price;
 	}
-	public void setPrice(double price) {
+	/*public void setPrice(double price) {
 		this.price = price;
 	}
 	public String getCategory() {
@@ -23,14 +23,14 @@ public class Product {
 	}
 	public void setCategory(String category) {
 		this.category = category;
-	}
+	}*/
 	public int getQuantity() {
 		return quantity;
 	}
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	public char getSize() {
+	/*public char getSize() {
 		return size;
 	}
 	public void setSize(char size) {
@@ -47,17 +47,28 @@ public class Product {
 	}
 	public void setColor(String color) {
 		this.color = color;
-	}
+	}*/
 	double price;	
-	String category;	
 	int quantity;
+	/*String category;
 	char size;  
 	String author;
-	String color;
+	String color;*/
 
-//Creating a Constructor
+	//Creating Constuctor for name, price and quantity
 
-Product(String name,double price,String category, int quantity,char size, String color  ){
+	public Product(String name, double price, int quantity) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+
+	}
+
+
+	//Creating a Constructor
+
+	/*Product(String name,double price,String category, int quantity,char size, String color  ){
 	this.name = name;
 	this.price = price;
 	this.category = category;
@@ -80,22 +91,30 @@ Product(String name,double price,String category, int quantity){
 	this.price = price;
 	this.category = category;
 	this.quantity = quantity;
-}
-//Creating a toString Method
-@Override
+}*/
+	//Creating a toString Method
+	/*@Override
 public String toString() {
 	return "Product [name=" + name + ", price=" + price + ", category="
 			+ category + ", quantity=" + quantity + ", size=" + size
 			+ ", author=" + author + ", color=" + color + "]";
-}
-// Creating instand method buy()
-public boolean buy(){
-	if(this.quantity > 0 ){
-		this.quantity--;
-		return true;
-	}else{
-		return false;
+}*/
+
+
+	// Creating instand method buy()
+	public boolean buy(){
+		if(this.quantity > 0 ){
+			this.quantity--;
+			return true;
+		}else{
+			return false;
+		}
 	}
-}
+
+	//Creating an abstract method
+	public void getDetails() {
+		System.out.println("We sell books that’ll make you smarter at programming");
+	}
+
 
 }

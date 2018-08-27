@@ -1,4 +1,4 @@
-import java.util.InputMismatchException;
+/*import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Date;
 
@@ -25,7 +25,7 @@ public class Shop {
 			System.out.println("Shop is close");
 		}
 		else{
-			while(true){
+			while(true){ 
 				System.out.println("Enter the product index (0 to 4) you want to buy. To exit the shopping cart, enter any number other than 0 to 4");
 
 				for(int i =0;i<inventory.length;i++){
@@ -41,7 +41,7 @@ public class Shop {
 				}
 				if(userInput>=0 && userInput<5){
 					if(inventory[userInput].buy()){
-						System.out.println("Your purchase was succesful");
+						System.out.println("Your purchase was successful");
 						totalAmount += inventory[userInput].getPrice();
 					}
 
@@ -67,4 +67,4 @@ public class Shop {
 
 
 	}
-}
+}*/
